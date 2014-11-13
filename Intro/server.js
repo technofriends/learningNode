@@ -16,7 +16,7 @@ function start(route){
 	}
 
 	http.createServer(onrequest).listen(8888);
-	console.log('server has started');
+	console.log('server has started and is listening on http://localhost:8888 ');
 
 }
 
