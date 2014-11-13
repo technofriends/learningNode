@@ -6,4 +6,5 @@ http.createServer(function(request, response) {
   response.write("Hello, this is Vaibhav");
   response.end();
 }).listen(8080);
+console.log('server started...')
 
