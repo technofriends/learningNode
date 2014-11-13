@@ -4,7 +4,9 @@ var url = require('url');
 function start(route){
 	function onrequest(request,response){
 		var pathname = url.parse(request.url).pathname;
+		var query = url.parse(request.url).query;
 		console.log("request for " + pathname + " received.");
+		console.log("querystrings requested are : " + query);
 
 		route(pathname);
 		response.writeHead(200,
